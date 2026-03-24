@@ -1,6 +1,6 @@
 # pyplot/ui/layout.py
-import urwid
 
+import urwid
 
 def get_ram_info():
     try:
@@ -13,7 +13,6 @@ def get_ram_info():
         return f"RAM: {used}MB / {total}MB"
     except Exception:
         return "RAM: N/A"
-
 
 class Layout:
     MODES = [
@@ -96,16 +95,6 @@ class Layout:
 
         self._plot_width = 76
         self._plot_height = 30
-
-        # Detektiraj stvarnu veličinu terminala
-        try:
-            import plotext as plt
-            cols, rows = plt.terminal_size()
-            if cols > 50 and rows > 10:
-                self._plot_width = max(40, cols - 44)
-                self._plot_height = max(10, rows - 8)
-        except Exception:
-            pass
 
     def _build_functions_panel(self):
         items = []
