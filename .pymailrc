@@ -9,8 +9,8 @@
       "smtp_port": 465,
       "smtp_ssl": true,
       "smtp_starttls": false,
-      "username": "mario.doksa@gmail.com",
-      "password": "nahvbriwnohtkxpz"
+      "username": "somebody@gmail.com",
+      "password": "google app password"
     }
   ]
 }
